@@ -3,9 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles_header.css" />
+    <link rel="stylesheet" href="./styles_section_first.css" />
+    <link rel="stylesheet" href="../public/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nowoczesna aranżacja ogrodów</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>giard</strong>design</a>
+        <div class="collapse">
+          <ul class="navbar-nav">
+            <li class="dropdown">
+              <a class="offers" href="#"
+                >Oferty<i class="fas fa-caret-down"></i
+              ></a>
+              <ul class="dropdown-menu" aria-labelledby="ofertyDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Projektowanie ogrodów</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Zrównoważone ogrody</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ogrody miejskie</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ogrody rekreacyjne</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ogrody wodne</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Nowoczesne ogrody</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ogrody sensoryczne</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">O firmie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Realizacje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontakt</a>
+            </li>
+            <li>
+              <button class="search-button">
+                <i class="fas fa-search search-icon"></i>
+              </button>
+              <ul class="dropdown-input">
+                <li>
+                  <input
+                    type="text"
+                    id="inputField"
+                    placeholder="Wyszukaj frazę"
+                    class="search-input"
+                  />
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="all-sections">
+      <section class="intro">
+        <div class="container-content">
+          <div class="content">
+            <h3 class="title">
+              Nowoczesna<br />
+              aranżacja<br />
+              Twojego ogrodu
+            </h3>
+            <p class="brand-description">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka<br />
+              estetyka realizacji. Oferujemy kompleksowy zakres usług<br />
+              z indywidualnym podejściem do każdego projektu.
+            </p>
+            <div class="incentive">
+              <button class="contact_button">Skontaktuj się z nami</button>
+              <button class="projects_done">Zobacz nasze realizacje</button>
+            </div>
+          </div>
+        </div>
+        <div class="image-content"></div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
