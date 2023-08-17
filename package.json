@@ -1,0 +1,19 @@
+{
+  "name": "zadanie-rekrutacyjne",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szrederkarol1/Zadanie-Rekrutacyjne.git"
+  },
+  "author": "Karol Szreder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szrederkarol1/Zadanie-Rekrutacyjne/issues"
+  },
+  "homepage": "https://github.com/szrederkarol1/Zadanie-Rekrutacyjne#readme"
+}
