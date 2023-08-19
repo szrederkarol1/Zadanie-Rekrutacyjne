@@ -63,3 +63,76 @@
   color: #1b5b31;
   line-height: 24px;
 }
+
+.carousel {
+  position: relative;
+  height: auto;
+  width: 50%;
+}
+
+.carousel__item {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, #7f994f 20%, #475b32 70%, #293820 90%);
+  display: none;
+  overflow: hidden;
+  position: relative;
+}
+.carousel__item img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.carousel__item--selected {
+  display: block;
+}
+.carousel__item:hover img {
+  transform: scale(1.11);
+  filter: brightness(1.2);
+}
+
+.carousel__nav {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__nav {
+  width: 100%;
+  padding: 10px 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.carousel__button {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8) 20%,
+    rgba(0, 0, 0, 0.2) 90%
+  );
+  border-radius: 50%;
+  margin: 0 6px; /* Trochę większa odległość między przyciskami */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.carousel__button:hover {
+  transform: scale(1.2); /* Powiększenie przy najechaniu myszką */
+}
+
+.carousel__button--selected {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8) 30%,
+    rgba(0, 0, 0, 0.2) 90%
+  );
+  transform: scale(1.3); /* Powiększenie dla zaznaczonego przycisku */
+}
