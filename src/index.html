@@ -238,12 +238,12 @@
       <!-- GALLERY -->
       <section class="gallery">
         <div class="content_title_gallery">
-          <p class="paragaraph_gallery">Realizacje</p>
-          <h3 class="title_gallery">Nasze <em>projekty</em</h3>
+          <p class="paragraph_gallery">Realizacje</p>
+          <h3 class="title_gallery">Nasze <em>projekty</em></h3>
         </div>
         <div
           class="grid js-masonry"
-          data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 25  }'
+          data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 25, "gutter": 19 }'
         >
           <div class="grid-item">
             <img src="../public/images/for gallery/Photo.png" alt="" />
@@ -273,6 +273,10 @@
             <img src="../public/images/for gallery/Photo8.png" alt="" />
           </div>
         </div>
+        <button class="button_gallery">
+          Rozwiń<img src="../public/icons/vector_down.png" />
+        </button>
+        <div class="gradient"></div>
       </section>
       <!-- INSTAGRAM -->
       <section class="instagram_block">
@@ -330,7 +334,6 @@
       </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="./app.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="app.js"></script>
   </body>

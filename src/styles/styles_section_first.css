@@ -83,7 +83,6 @@
 .carousel__item img {
   width: 100%;
   height: 95%;
-  object-fit: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 .carousel__item--selected {
@@ -97,17 +96,9 @@
 .carousel__nav {
   width: 100%;
   position: absolute;
+  padding: 10px 0;
   bottom: 10px;
   left: 0;
-  text-align: center;
-}
-
-.carousel__nav {
-  width: 100%;
-  padding: 10px 0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   text-align: center;
 }
 

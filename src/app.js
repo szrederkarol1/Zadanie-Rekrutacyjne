@@ -1,4 +1,3 @@
-
 //INPUT
 const searchButton = document.querySelector(".search-button");
 const searchInput = document.querySelector(".search-input");
@@ -18,7 +17,7 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
   const buttonsCarousel = Array.from(items, () => {
     return `<span class="carousel__button"></span>`;
   });
-  const buttonsHtml = buttonsCarousel.join(""); // Utworzenie HTML z przyciskami
+  const buttonsHtml = buttonsCarousel.join(''); // Utworzenie HTML z przyciskami
 
   carousel.insertAdjacentHTML(
     "beforeend",
