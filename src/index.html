@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles_header.css" />
-    <link rel="stylesheet" href="./styles_section_first.css" />
     <link rel="stylesheet" href="../public/reset.css" />
-    <link rel="stylesheet" href="./Offer.css" />
+    <link rel="stylesheet" href="./styles/styles_header.css" />
+    <link rel="stylesheet" href="./styles/styles_section_first.css" />
+    <link rel="stylesheet" href="./styles/styles_offers.css" />
+    <link rel="stylesheet" href="./styles/styles_about_company.css" />
+    <link rel="stylesheet" href="./styles/styles_instagram.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -28,6 +30,7 @@
     <title>Nowoczesna aranżacja ogrodów</title>
   </head>
   <body>
+    <!-- NAWIGACJA -->
     <nav class="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><strong>giard</strong>design</a>
@@ -89,7 +92,9 @@
         </div>
       </div>
     </nav>
+    <!-- WSZYSTKIE SEKCJE -->
     <main class="all-sections">
+      <!-- INTRO -->
       <section class="intro">
         <div class="container-content">
           <div class="content">
@@ -111,16 +116,17 @@
         </div>
         <div class="carousel">
           <div class="carousel__item">
+            <img src="../public/images/3.png" />
+          </div>
+          <div class="carousel__item">
             <img src="../public/images/Photo.png" />
           </div>
           <div class="carousel__item">
             <img src="../public/images/Photo 2.png" />
           </div>
-          <div class="carousel__item">
-            <img src="../public/images/3.png" />
-          </div>
         </div>
       </section>
+      <!-- OFERTY -->
       <section class="offer">
         <div class="description_offer">
           <h6 class="title_offer">Oferta</h6>
@@ -185,6 +191,56 @@
               Zobacz nasze realizacje<img src="../public/icons/vector.png" />
             </button>
             <div class="offer-overlay"></div>
+          </div>
+        </div>
+      </section>
+      <!-- O FIRMIE -->
+      <section class="about_company">
+        <div class="image_content">
+          <img
+            src="../public/images/Photo.png"
+            alt="
+          river of stones in the garden"
+          />
+        </div>
+        <div class="big_container_about_company">
+          <div class="container_about_company">
+            <div class="content_about_company">
+              <h6 class="title_about_company">O firmie</h6>
+              <div class="title_paragraph_about_company">
+                <h3 class="passion">
+                  Tworzymy<br />
+                  z <em>pasją</em>
+                </h3>
+                <p class="description_about_company">
+                  Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+                  wykwalifikowani projektanci oraz architekci, których zadaniem
+                  jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+                  specjalizacja to przestrzenie nowoczesne, które charakteryzuje
+                  minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+                  małoobsługowe, dostosowane do współczesnego trybu życia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="button_about_company">
+            Poznaj nas bliżej<img
+              src="../public/icons/vector_about_company.png"
+            />
+          </button>
+        </div>
+      </section>
+      <!-- INSTAGRAM -->
+      <section class="instagram_block">
+        <div class="container_instagram">
+          <h3 class="title_instagram">
+            Zostańmy w kontakcie!<br />Znajdziesz nas na
+            <em><strong>instagramie</strong></em
+            >.
+          </h3>
+          <div class="paragraph_and_button">
+            <p class="paragraph_instagram">Śledź nasze najnowsze realizacje!</p>
+            <button class="button_instagram">Instagram</button>
           </div>
         </div>
       </section>
