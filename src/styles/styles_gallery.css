@@ -1,0 +1,41 @@
+.gallery {
+  width: 100%;
+  height: 114rem;
+  background: #dcc1ab;
+}
+
+.content_title_gallery {
+  position: relative;
+  left: 11%;
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 9%;
+  padding-top: 8%;
+}
+.paragraph_gallery {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -1%0;
+  color: #1b5b31;
+}
+.title_gallery {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 55.2px;
+  letter-spacing: -3%;
+  color: #111111;
+}
+
+.grid {
+    position: relative;
+    left: 1.3%;
+}
+.grid-items {
+    position: relative;
+}

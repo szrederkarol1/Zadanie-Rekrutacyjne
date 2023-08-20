@@ -4,16 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "start": "live-server"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/szrederkarol1/Zadanie-Rekrutacyjne.git"
   },
   "author": "Karol Szreder",
   "license": "ISC",
+  "dependencies": {
+    "masonry-layout": "^4.2.2"
+  },
   "bugs": {
     "url": "https://github.com/szrederkarol1/Zadanie-Rekrutacyjne/issues"
   },
-  "homepage": "https://github.com/szrederkarol1/Zadanie-Rekrutacyjne#readme"
+  "homepage": "https://github.com/szrederkarol1/Zadanie-Rekrutacyjne#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }

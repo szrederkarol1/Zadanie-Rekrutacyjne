@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/styles_about_company.css" />
     <link rel="stylesheet" href="./styles/styles_instagram.css" />
     <link rel="stylesheet" href="./styles/styles_footer.css" />
+    <link rel="stylesheet" href="./styles/styles_gallery.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -233,6 +235,45 @@
           </button>
         </div>
       </section>
+      <!-- GALLERY -->
+      <section class="gallery">
+        <div class="content_title_gallery">
+          <p class="paragaraph_gallery">Realizacje</p>
+          <h3 class="title_gallery">Nasze <em>projekty</em</h3>
+        </div>
+        <div
+          class="grid js-masonry"
+          data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 25  }'
+        >
+          <div class="grid-item">
+            <img src="../public/images/for gallery/Photo.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="../public/images/for gallery/Photo1.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="../public/images/for gallery/Photo2.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="../public/images/for gallery/Photo3.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="../public/images/for gallery/Photo4.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="../public/images/for gallery/Photo5.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="../public/images/for gallery/Photo6.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="../public/images/for gallery/Photo7.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img src="../public/images/for gallery/Photo8.png" alt="" />
+          </div>
+        </div>
+      </section>
       <!-- INSTAGRAM -->
       <section class="instagram_block">
         <div class="container_instagram">
@@ -289,6 +330,8 @@
       </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./app.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
