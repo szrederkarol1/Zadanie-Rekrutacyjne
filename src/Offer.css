@@ -1,0 +1,135 @@
+.offer {
+  width: 100%;
+  height: 58.68rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #f5f0ec;
+}
+.description_offer {
+  width: 65rem;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title_offer {
+  font-size: 12px;
+  line-height: 18px;
+  color: #1b5b31;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.text_offer {
+  width: 44rem;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.headline_offer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 55.2px;
+  color: #111111;
+}
+.paragraph_offer {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  width: 44rem;
+  letter-spacing: -1px;
+}
+.cards {
+  width: 100%;
+  height: 23rem;
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  position: relative;
+  width: 23.5rem;
+  height: 23rem;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #ffffff;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}
+.offer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(203, 188, 175, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.card:hover .offer-overlay {
+  opacity: 1;
+}
+.icon_text {
+  width: 18.5rem;
+  height: 11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+.headline_text_projects {
+  height: 6.68rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title_cards {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32.2px;
+}
+.paragraph_cards {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -1px;
+}
+.button_cards {
+  width: 9rem;
+  height: 1.75rem;
+  border: none;
+  border-bottom: 1px solid #1b5b31;
+  padding: 0px, 0px, 4px, 0px;
+  color: #1b5b31;
+  background-color: transparent;
+  margin-left: 5%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+  font-weight: bold;
+}
+.button_cards img {
+  height: 16px;
+  width: 16px;
+}
+.third_button {
+  width: 11rem;
+}
