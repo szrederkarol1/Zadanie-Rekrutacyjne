@@ -34,8 +34,9 @@
 
 .grid {
   position: relative;
-  left: 0.9%;
+  left: 0.85%;
 }
+
 
 .button_gallery {
   width: 8rem;
@@ -50,7 +51,7 @@
   background: transparent;
   position: relative;
   left: 41.375rem;
-  top: -20rem;
+  top: -10rem;
   z-index: 2;
   display: flex;
   align-items: center;
@@ -67,4 +68,9 @@
   z-index: 1;
   position: relative;
   top: -70rem;
+}
+
+.grid-item a {
+  text-decoration: none;
+  cursor: pointer;
 }

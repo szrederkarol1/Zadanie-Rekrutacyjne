@@ -17,7 +17,7 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
   const buttonsCarousel = Array.from(items, () => {
     return `<span class="carousel__button"></span>`;
   });
-  const buttonsHtml = buttonsCarousel.join(''); // Utworzenie HTML z przyciskami
+  const buttonsHtml = buttonsCarousel.join(""); // Utworzenie HTML z przyciskami
 
   carousel.insertAdjacentHTML(
     "beforeend",
@@ -42,3 +42,14 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
   buttons[0].classList.add("carousel__button_selected");
 });
 
+const buttonGallery = document.querySelector(".button_gallery");
+const gradient = document.querySelector(".gradient");
+buttonGallery.addEventListener("click", () => {
+  gradient.style.background = "none";
+  buttonGallery.style.display = "none";
+});
+
+const gridItem = document.querySelector('grid-tem');
+gridItem.addEventListener('click', () => {
+  
+})

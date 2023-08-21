@@ -95,6 +95,7 @@ li {
   width: 0;
   transition: width 0.3s;
   overflow: hidden;
+  display: none;
 }
 .search-input:focus {
   width: 150px;
