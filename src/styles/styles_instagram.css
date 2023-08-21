@@ -13,6 +13,11 @@
   justify-content: space-evenly;
   align-items: center;
   background: #1b5b31;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .title_instagram {
   font-family: "Montserrat", sans-serif;
@@ -20,6 +25,9 @@
   font-size: 40px;
   line-height: 48px;
   color: #f5f0ec;
+  @media (max-width: 800px) {
+    text-align: center;
+  }
 }
 .paragraph_and_button {
   width: 10rem;
@@ -28,6 +36,11 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  @media (max-width: 800px) {
+    flex-direction: row;
+    width: 22rem;
+    margin-top: 2em;
+  }
 }
 .paragraph_instagram {
   font-family: "Inter", sans-serif;
@@ -36,6 +49,9 @@
   letter-spacing: -1%;
   color: #f5f0ec;
   text-align: left;
+  @media (max-width: 800px) {
+    text-align: center;
+  }
 }
 .button_instagram {
   width: 7.75rem;
@@ -44,4 +60,5 @@
   background: #f5f0ec;
   color: #1b5b31;
   border: none;
+  cursor: pointer;
 }

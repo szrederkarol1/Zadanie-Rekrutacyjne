@@ -3,10 +3,24 @@
   height: 45rem;
   display: flex;
   background: #1b5b31;
+  @media (max-width: 1200px) {
+    display: block;
+    height: auto;
+  }
 }
 .image_content {
   width: 50%;
   height: 100%;
+  @media (max-width: 1200px) {
+   width: 100%;
+   height: auto;
+  }
+}
+.image_content img {
+  @media (max-width: 1200px) {
+    width: 100%;
+    height: auto;
+   }
 }
 .big_container_about_company {
   height: 100%;
@@ -15,6 +29,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media (max-width: 1200px) {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2em;
+   }
 }
 .container_about_company {
   width: 37.25rem;
