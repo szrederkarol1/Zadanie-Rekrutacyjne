@@ -12,15 +12,15 @@
   width: 50%;
   height: 100%;
   @media (max-width: 1200px) {
-   width: 100%;
-   height: auto;
+    width: 100%;
+    height: auto;
   }
 }
 .image_content img {
   @media (max-width: 1200px) {
     width: 100%;
     height: auto;
-   }
+  }
 }
 .big_container_about_company {
   height: 100%;
@@ -33,7 +33,7 @@
     width: 100%;
     height: auto;
     padding-bottom: 2em;
-   }
+  }
 }
 .container_about_company {
   width: 37.25rem;
@@ -42,6 +42,10 @@
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
+  @media (max-width: 600px) {
+    text-align: center;
+    align-items: center;
+  }
 }
 .content_about_company {
   height: 20.5rem;
@@ -50,6 +54,10 @@
   flex-direction: column;
   justify-content: space-between;
   color: #f5f0ec;
+  @media (max-width: 600px) {
+    position: relative;
+    left: 5%;
+  }
 }
 .title_paragraph_about_company {
   display: flex;
@@ -94,7 +102,10 @@
   position: relative;
   left: -6.25rem;
   cursor: pointer;
+  @media (max-width: 600px) {
+    left: 0;
+  }
 }
 .button_about_company img {
-    margin-left: 10px;
+  margin-left: 10px;
 }

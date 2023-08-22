@@ -5,6 +5,18 @@ const searchInput = document.querySelector(".search-input");
 searchButton.addEventListener("click", () => {
   searchInput.style.display = "block";
   searchInput.focus();
+  searchButton.style.display = "none";
+});
+
+document.addEventListener("click", (event) => {
+  // Sprawdź czy kliknięcie nie było wewnątrz inputa lub przycisku
+  if (
+    !searchInput.contains(event.target) &&
+    !searchButton.contains(event.target)
+  ) {
+    searchInput.style.display = "none";
+    searchButton.style.display = "block";
+  }
 });
 
 searchInput.addEventListener("blur", () => {
@@ -67,6 +79,12 @@ function initPopup(index) {
   image.alt = "";
   popupContent.appendChild(image);
   popup.style.display = "block";
+  popup.style.position = "fixed";
+  popup.style.height = "100%";
+  popup.style.width = "100%";
+  prevButton.style.display = "block";
+  nextButton.style.display = "block";
+
   updateNavigation();
 }
 

@@ -76,6 +76,7 @@
   transition: transform 0.3s, box-shadow 0.3s;
   @media (max-width: 1150px) {
     margin: 1em;
+    align-items: center;
   }
 }
 .card:hover {
@@ -104,6 +105,11 @@
   flex-direction: column;
   justify-content: space-between;
   margin-left: 5%;
+  @media (max-width: 1150px) {
+    align-items: center;
+    text-align: center;
+    height: 12rem;
+  }
 }
 .headline_text_projects {
   height: 6.68rem;
