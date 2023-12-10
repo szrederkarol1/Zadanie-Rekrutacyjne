@@ -28,6 +28,36 @@ body {
       .navbar-nav {
         display: flex;
         justify-content: space-between;
+        .search-box {
+          .dropdown-input {
+            .input-box {
+              .search-input {
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 0;
+                transition: width 0.3s;
+                overflow: hidden;
+                display: none;
+                &:focus {
+                  width: 150px;
+                  padding-right: 5px;
+                  transition: width 0.3s, padding 0.3s;
+                }
+              }
+            }
+          }
+          .search-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            outline: none;
+            margin-top: 0.5em;
+            .search-icon {
+              cursor: pointer;
+            }
+          }
+        }
         .dropdown {
           position: relative;
           width: 13%;
@@ -42,7 +72,7 @@ body {
             margin-top: 30px;
             border-radius: 7px;
             display: none;
-            li {
+            .dropdown-menu-item {
               padding: 0.5rem;
               &:hover {
                 background: rgb(255, 213, 196);
@@ -82,32 +112,6 @@ body {
         width: 80%;
       }
     }
-  }
-}
-
-.search-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  outline: none;
-  margin-top: 0.5em;
-  .search-icon {
-    cursor: pointer;
-  }
-}
-
-.search-input {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 0;
-  transition: width 0.3s;
-  overflow: hidden;
-  display: none;
-  &:focus {
-    width: 150px;
-    padding-right: 5px;
-    transition: width 0.3s, padding 0.3s;
   }
 }
 
