@@ -1,95 +1,92 @@
 .all-sections {
   width: 100%;
   height: auto;
-}
-.intro {
-  width: 100%;
-  height: 46rem;
-  display: flex;
-  @media (max-width: 1150px) {
-    display: block;
-    height: auto;
-  }
-}
-.container-content {
-  display: flex;
-  width: 50%;
-  height: 100%;
-  background-color: #dcc1ab;
-  align-items: center;
-  @media (max-width: 1150px) {
+  .intro {
     width: 100%;
-    justify-content: center;
-    text-align: center;
-    height: 25em;
-  }
-}
-.content {
-  height: 65%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  position: relative;
-  left: 4rem;
-  @media (max-width: 1150px) {
-    left: 0;
-  }
-}
-.content h3 {
-  font-size: 3.75rem;
-  line-height: 4.35rem;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-}
-.content p {
-  font-weight: 400;
-  line-height: 1.5rem;
-  font-family: "Inter", sans-serif;
-}
-.incentive {
-  width: 68%;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  @media (max-width: 1150px) {
-    width: 100%;
-    margin-top: 2em;
-  }
-}
-.contact_button {
-  height: 100%;
-  padding: 12px, 24px, 14px, 24px;
-  width: 13rem;
-  border: none;
-  background-color: #1b5b31;
-  border-radius: 200px;
-  margin-right: 2.3rem;
-  color: #f5f0ec;
-  line-height: 24px;
-  font-weight: 200;
-  font-family: "Inter", sans-serif;
-  cursor: pointer;
-}
-.projects_done {
-  height: 100%;
-  padding: 12px, 22px, 14px, 22px;
-  border: 1px solid #1b5b31;
-  width: 15.56rem;
-  border-radius: 200px;
-  background-color: transparent;
-  color: #1b5b31;
-  line-height: 24px;
-  cursor: pointer;
-}
-
-.carousel {
-  position: relative;
-  height: auto;
-  width: 50%;
-  @media (max-width: 1150px) {
-    width: 100%;
-    height: 70em;
+    height: 46rem;
+    display: flex;
+    @media (max-width: 1150px) {
+      display: block;
+      height: auto;
+    }
+    .container-content {
+      display: flex;
+      width: 50%;
+      height: 100%;
+      background-color: #dcc1ab;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 1150px) {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        height: 25em;
+      }
+      .content {
+        height: 65%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .brand-description {
+          font-weight: 400;
+          line-height: 1.5rem;
+          font-family: "Inter", sans-serif;
+        }
+        .title {
+          font-size: 3.75rem;
+          line-height: 4.35rem;
+          font-weight: 500;
+          font-family: "Montserrat", sans-serif;
+          text-align: center;
+        }
+      }
+      .incentive {
+        width: 68%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 1150px) {
+          width: 100%;
+          margin-top: 2em;
+        }
+        .contact-button {
+          height: 100%;
+          padding: 12px, 24px, 14px, 24px;
+          width: 13rem;
+          border: none;
+          background-color: #1b5b31;
+          border-radius: 200px;
+          margin-right: 2.3rem;
+          color: #f5f0ec;
+          line-height: 24px;
+          font-weight: 200;
+          font-family: "Inter", sans-serif;
+          cursor: pointer;
+        }
+        .projects-done {
+          height: 100%;
+          padding: 12px, 22px, 14px, 22px;
+          border: 1px solid #1b5b31;
+          width: 15.56rem;
+          border-radius: 200px;
+          background-color: transparent;
+          color: #1b5b31;
+          line-height: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+    .carousel {
+      position: relative;
+      height: auto;
+      width: 50%;
+      @media (max-width: 1150px) {
+        width: 100%;
+        height: 70em;
+      }
+    }
   }
 }
 
@@ -100,18 +97,19 @@
   display: none;
   overflow: hidden;
   position: relative;
+  img {
+    width: 100%;
+    height: 95%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  &:hover img {
+    transform: scale(1.11);
+    filter: brightness(1.2);
+  }
 }
-.carousel__item img {
-  width: 100%;
-  height: 95%;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
+
 .carousel__item--selected {
   display: block;
-}
-.carousel__item:hover img {
-  transform: scale(1.11);
-  filter: brightness(1.2);
 }
 
 .carousel__nav {
@@ -120,32 +118,21 @@
   bottom: 10px;
   left: 0;
   text-align: center;
-}
-
-.carousel__button {
-  width: 14px;
-  height: 14px;
-  display: inline-block;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.8) 20%,
-    rgba(0, 0, 0, 0.2) 90%
-  );
-  border-radius: 50%;
-  margin: 0 6px; /* Trochę większa odległość między przyciskami */
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.carousel__button:hover {
-  transform: scale(1.2); /* Powiększenie przy najechaniu myszką */
-}
-
-.carousel__button--selected {
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.8) 30%,
-    rgba(0, 0, 0, 0.2) 90%
-  );
-  transform: scale(1.3); /* Powiększenie dla zaznaczonego przycisku */
+  .carousel__button {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.8) 20%,
+      rgba(0, 0, 0, 0.2) 90%
+    );
+    border-radius: 50%;
+    margin: 0 6px; /* Trochę większa odległość między przyciskami */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.2); /* Powiększenie przy najechaniu myszką */
+    }
+  }
 }
