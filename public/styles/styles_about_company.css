@@ -2,110 +2,110 @@
   width: 100%;
   height: 45rem;
   display: flex;
-  background: #1b5b31;
+  background: #578166;
   @media (max-width: 1200px) {
     display: block;
     height: auto;
   }
-}
-.image_content {
-  width: 50%;
-  height: 100%;
-  @media (max-width: 1200px) {
-    width: 100%;
-    height: auto;
+  .image_content {
+    width: 50%;
+    height: 100%;
+    @media (max-width: 1200px) {
+      width: 100%;
+      height: auto;
+    }
+    img {
+      @media (max-width: 1200px) {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
-}
-.image_content img {
-  @media (max-width: 1200px) {
-    width: 100%;
-    height: auto;
-  }
-}
-.big_container_about_company {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  @media (max-width: 1200px) {
-    width: 100%;
-    height: auto;
-    padding-bottom: 2em;
-  }
-}
-.container_about_company {
-  width: 37.25rem;
-  height: 28.125rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
-  @media (max-width: 600px) {
-    text-align: center;
+  .big_container_about_company {
+    height: 100%;
+    width: 50%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 1200px) {
+      width: 100%;
+      height: auto;
+      padding-bottom: 2em;
+    }
+    .container_about_company {
+      width: 37.25rem;
+      height: 28.125rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      flex-direction: column;
+      @media (max-width: 600px) {
+        text-align: center;
+        align-items: center;
+      }
+      .content_about_company {
+        height: 20.5rem;
+        width: 31.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #f5f0ec;
+        @media (max-width: 600px) {
+          position: relative;
+          left: 5%;
+        }
+        .title_about_company {
+          font-family: "Inter", sans-serif;
+          font-weight: 400;
+          font-size: 12;
+          line-height: 18px;
+          letter-spacing: -1%;
+          color: #f5f0ec;
+        }
+        .title_paragraph_about_company {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .passion {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 55.2px;
+            letter-spacing: -3%;
+            margin-bottom: 40px;
+            color: #f5f0ec;
+          }
+          .description_about_company {
+            font-family: "Inter", sans-serif;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: -1%;
+            color: #f5f0ec;
+          }
+        }
+      }
+    }
+    .button_about_company {
+      background: transparent;
+      border: none;
+      border: 1px solid #f5f0ec;
+      border-radius: 200px;
+      color: #f5f0ec;
+      height: 3.125rem;
+      width: 12.125rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      left: -6.25rem;
+      cursor: pointer;
+      @media (max-width: 600px) {
+        left: 0;
+      }
+      img {
+        margin-left: 10px;
+      }
+    }
   }
-}
-.content_about_company {
-  height: 20.5rem;
-  width: 31.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: #f5f0ec;
-  @media (max-width: 600px) {
-    position: relative;
-    left: 5%;
-  }
-}
-.title_paragraph_about_company {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.title_about_company {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 12;
-  line-height: 18px;
-  letter-spacing: -1%;
-  color: #f5f0ec;
-}
-.passion {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 55.2px;
-  letter-spacing: -3%;
-  margin-bottom: 40px;
-  color: #f5f0ec;
-}
-.description_about_company {
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: -1%;
-  color: #f5f0ec;
-}
-.button_about_company {
-  background: transparent;
-  border: none;
-  border: 1px solid #f5f0ec;
-  border-radius: 200px;
-  color: #f5f0ec;
-  height: 3.125rem;
-  width: 12.125rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  left: -6.25rem;
-  cursor: pointer;
-  @media (max-width: 600px) {
-    left: 0;
-  }
-}
-.button_about_company img {
-  margin-left: 10px;
 }
