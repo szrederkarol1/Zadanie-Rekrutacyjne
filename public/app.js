@@ -9,7 +9,7 @@ searchButton.addEventListener("click", () => {
 });
 
 document.addEventListener("click", (event) => {
-  // Sprawdź czy kliknięcie nie było wewnątrz inputa lub przycisku
+  // Sprawdzenie czy kliknięcie nie było wewnątrz inputa lub przycisku
   if (
     !searchInput.contains(event.target) &&
     !searchButton.contains(event.target)
