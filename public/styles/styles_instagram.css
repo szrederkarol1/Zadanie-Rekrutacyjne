@@ -6,21 +6,18 @@
   align-items: center;
   background: #f5f0ec;
   .container_instagram {
-    width: 65rem;
+    width: 100%;
     height: 22.37rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background: #1b5b31;
-    @media (max-width: 800px) {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+
     .title_instagram {
       font-family: "Montserrat", sans-serif;
       font-weight: 100;
-      font-size: 40px;
+      font-size: 32px;
       line-height: 48px;
       color: #f5f0ec;
       @media (max-width: 800px) {
@@ -28,17 +25,12 @@
       }
     }
     .paragraph_and_button {
-      width: 10rem;
+      width: 100%;
       height: 7.5rem;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
       text-align: center;
-      @media (max-width: 800px) {
-        flex-direction: row;
-        width: 22rem;
-        margin-top: 2em;
-      }
       .paragraph_instagram {
         font-family: "Inter", sans-serif;
         font-weight: 300;

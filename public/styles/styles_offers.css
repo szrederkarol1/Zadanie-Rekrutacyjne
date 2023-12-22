@@ -1,6 +1,6 @@
 .offer {
   width: 100%;
-  height: 58.68rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,7 @@
   }
   .description_offer {
     width: 65rem;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,23 +30,24 @@
       margin-bottom: 10px;
     }
     .text_offer {
-      width: 44rem;
-      height: 14rem;
+      width: 100%;
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       .headline_offer {
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
-        font-size: 48px;
+        font-size: 42px;
         line-height: 55.2px;
         color: #111111;
       }
       .paragraph_offer {
         font-family: "Inter", sans-serif;
         font-weight: 400;
-        line-height: 28px;
-        width: 44rem;
+        line-height: 24px;
+        width: 100%;
+        height: auto;
         letter-spacing: -1px;
       }
     }
