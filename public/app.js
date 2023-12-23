@@ -54,80 +54,13 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
   buttons[0].classList.add("carousel__button_selected");
 });
 
-// const buttonGallery = document.querySelector(".button_gallery");
-// const gradient = document.querySelector(".gradient");
-// buttonGallery.addEventListener("click", () => {
-//   gradient.style.background = "none";
-//   buttonGallery.style.display = "none";
-// });
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".collapse");
 
-//GALLERY
-// const popup = document.getElementById("popup");
-// const popupContent = document.getElementById("popup-content");
-// const closeButton = document.getElementById("close-button");
-// const prevButton = document.getElementById("prev-button");
-// const nextButton = document.getElementById("next-button");
-// const imageLinks = document.querySelectorAll(".grid-item a");
-// const imageUrls = Array.from(imageLinks).map((link) => link.href);
-// let currentIndex = 0;
-
-// function initPopup(index) {
-//   currentIndex = index;
-//   popupContent.innerHTML = "";
-//   const image = document.createElement("img");
-//   image.src = imageUrls[index];
-//   image.alt = "";
-//   popupContent.appendChild(image);
-//   popup.style.display = "block";
-//   popup.style.position = "fixed";
-//   popup.style.height = "100%";
-//   popup.style.width = "100%";
-//   prevButton.style.display = "block";
-//   nextButton.style.display = "block";
-
-//   updateNavigation();
-// }
-
-// function updateNavigation() {
-//   prevButton.disabled = currentIndex === 0;
-//   nextButton.disabled = currentIndex === imageUrls.length - 1;
-// }
-
-// prevButton.addEventListener("click", () => {
-//   navigate(-1);
-// });
-// nextButton.addEventListener("click", () => {
-//   navigate(1);
-// });
-
-// function navigate(direction) {
-//   currentIndex += direction;
-//   if (currentIndex < 0) {
-//     currentIndex = imageUrls.length - 1;
-//   } else if (currentIndex >= imageUrls.length) {
-//     currentIndex = 0;
-//   }
-//   initPopup(currentIndex);
-// }
-
-// closeButton.addEventListener("click", () => {
-//   popup.style.display = "none";
-// });
-
-// document.addEventListener("keydown", (e) => {
-//   if (popup.style.display === "block") {
-//     if (e.key === "ArrowLeft") {
-//       navigate(-1);
-//     } else if (e.key === "ArrowRight") {
-//       navigate(1);
-//     }
-//   }
-// });
-
-// // Dodaj słuchacza zdarzeń do każdego obrazka
-// imageLinks.forEach((link, index) => {
-//   link.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     initPopup(index);
-//   });
-// });
+hamburger.addEventListener("click", function () {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+});

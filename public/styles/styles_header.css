@@ -22,11 +22,47 @@ body {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
+    justify-content: space-between;
+    .hamburger {
+      width: 40px;
+      height: 35px;
+      border: 0;
+      border-top: 5px solid black;
+      background: transparent;
+      position: relative;
+      transition: 0.3s transform linear; display: inline-block;
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid black;
+        transform: translateY(10px);
+      }
+      &::after {
+        transform: translateY(25px);
+        transition: 0.3s transform linear;
+      }
+      &:focus {
+        transform: rotate(45deg) translateY(5px);
+        border: none;
+        &::after {
+          transform: rotate(-90deg) translateX(-10px);
+        }
+      }
+    }
     .collapse {
       width: 10%;
       height: auto;
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       .navbar-nav {
-        display: flex;
         justify-content: space-between;
         .search-box {
           .dropdown-input {
