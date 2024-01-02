@@ -54,13 +54,19 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
   buttons[0].classList.add("carousel__button_selected");
 });
 
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".hamburger-menu");
 const menu = document.querySelector(".collapse");
+const header = document.querySelector(".navbar");
 
 hamburger.addEventListener("click", function () {
-  if (menu.style.display === "block") {
+  if (menu.style.display === "flex") {
     menu.style.display = "none";
   } else {
-    menu.style.display = "block";
+    menu.style.display = "flex";
+  }
+  if (header.style.height === "100vh") {
+    header.style.height = "75px";
+  } else {
+    header.style.height = "100vh";
   }
 });
