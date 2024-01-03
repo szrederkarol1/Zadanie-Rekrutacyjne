@@ -4,24 +4,15 @@
   .intro {
     width: 100%;
     height: auto;
-    display: flex;
-    @media (max-width: 1150px) {
-      display: block;
-      height: auto;
-    }
+    display: block;
     .container-content {
       display: flex;
-      width: 50%;
-      height: auto;
+      width: 100%;
       background-color: #dcc1ab;
       align-items: center;
       justify-content: center;
-      @media (max-width: 1150px) {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-        height: 25em;
-      }
+      text-align: center;
+      height: 75vh;
       .content {
         height: 100%;
         width: 100%;
@@ -29,35 +20,31 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        padding: 0 20px;
+        .title {
+          font-size: 2.8rem;
+          line-height: 3.4rem;
+          font-weight: 500;
+          font-family: "Montserrat", sans-serif;
+          text-align: center;
+          width: 100%;
+        }
         .brand-description {
           font-weight: 400;
           line-height: 1.5rem;
           font-family: "Inter", sans-serif;
         }
-        .title {
-          font-size: 3rem;
-          line-height: 2.4rem;
-          font-weight: 500;
-          font-family: "Montserrat", sans-serif;
-          text-align: center;
-          @media (max-width: 1200px) {
-            width: 100%;
-          }
-        }
       }
       .incentive {
-        width: 68%;
-        height: 3rem;
+        width: 100%;
+        height: 4rem;
         display: flex;
         justify-content: center;
-        @media (max-width: 1150px) {
-          width: 100%;
-          margin-top: 2em;
-        }
+        margin-top: 2em;
         .contact-button {
           height: 100%;
           padding: 12px, 24px, 14px, 24px;
-          width: 13rem;
+          width: 15.56rem;
           border: none;
           background-color: #1b5b31;
           border-radius: 200px;
@@ -82,12 +69,26 @@
       }
     }
     .carousel {
-      position: relative;
-      height: auto;
-      width: 50%;
-      @media (max-width: 1150px) {
-        width: 100%;
-        height: 70em;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: 50vh;
+      width: 100%;
+      .buttons-prev-next {
+        display: flex;
+        height: 50px;
+        width: 125px;
+        background-color: bisque;
+        .prev {
+          height: 100%;
+          width: 50%;
+          background-color: #1b5b31;
+        }
+        .next {
+          height: 100%;
+          width: 50%;
+          background-color:aqua
+        }
       }
     }
   }
