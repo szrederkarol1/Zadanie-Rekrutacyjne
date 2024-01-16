@@ -24,7 +24,25 @@ searchInput.addEventListener("blur", () => {
 });
 
 //CAROUSEL
+let currentSlide = 0;
 
+function changeSlide(direction) {
+  const slides = document.querySelectorAll(".carousel-item");
+
+  // Ukryj aktualny slajd
+  slides[currentSlide].classList.remove("active");
+
+  // Przesuwam się do nowego slajdu
+  currentSlide += direction;
+
+  // Obracam się w kółko, jeśli osiągnięto ostatni lub pierwszy slajd
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  } else if (currentSlide < 0) {
+    currentSlide = slides.length - 1;
+  }
+  slides[currentSlide].classList.add("active");
+}
 
 //HAMBURGER MENU
 const hamburger = document.querySelector(".hamburger-menu");
